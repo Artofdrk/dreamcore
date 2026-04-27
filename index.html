@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Ethereal Wing | Museum of Transient Spaces</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <!-- GLOWING CUSTOM CURSOR -->
+    <div id="cursor-ring"></div>
+    <div id="cursor-dot"></div>
+
+    <!-- PERSISTENT NAVBAR -->
+    <nav>
+        <div class="logo">DREAMCORE</div>
+        <div class="nav-links">
+            <a href="#what-is-liminal" class="hover-target">CONCEPT</a>
+            <a href="#exhibit-01" class="hover-target">ACT I.</a>
+            <a href="#exhibit-02" class="hover-target">ACT II.</a>
+            <a href="#exhibit-03" class="hover-target">ACT III.</a>
+        </div>
+    </nav>
+
+    <!-- HERO SECTION -->
+    <header class="hero">
+        <h1>LIMINAL SPACE</h1>
+        <p>Where am i?...</p>
+
+        <!-- LEARN MORE / EXPLORE ARROW -->
+        <div class="learn-more-container hover-target">
+            <a href="#what-is-liminal">
+                Learn More
+                <span class="learn-more-arrow">↓</span>
+            </a>
+        </div>
+    </header>
+
+    <!-- WHAT IS LIMINAL SPACES (NEW SECTION) -->
+    <section class="exhibit" id="what-is-liminal">
+        <div class="glass-card center observe-me">
+            <span class="exhibit-num">INTRODUCTION</span>
+            <h2>What are Liminal Spaces?</h2>
+            <p>Liminal spaces are the threshold — the physical and emotional spaces between one destination and the next. They are the hallways, waiting rooms, abandoned malls, and empty indoor pools.</p>
+            <p>Stripped of their intended purpose and the people who usually inhabit them, these environments evoke an uncanny sense of familiarity, leaving you feeling as though you have walked these halls before in a distant, forgotten dream.</p>
+            <a href="#exhibit-01" class="btn-info hover-target">Proceed to ACT I</a>
+        </div>
+    </section>
+
+    <!-- EXHIBIT 01 -->
+    <section class="exhibit" id="exhibit-01">
+        <div class="glass-card observe-me">
+            <span class="exhibit-num">EXHIBIT I</span>
+            <h2>Level 94 - "Motion"</h2>
+            <p>Level 94 is a surreal, grainy 1930s-style town surrounded by infinite grass hills and a floating castle. During the day, the town is safe and empty, with vintage houses, cars, and a fountain of Almond Water. At night, the music stops and hostile “Animations” and other entities appear and attack. The surrounding hills are endless and glitch-like, containing random objects and fragments of buildings, with a water tower and a castle floating above on a transparent mountain.</p>
+            <button class="btn-info hover-target" onclick="openModal('modal-1')">Access Memory Core</button>
+        </div>
+    </section>
+
+    <!-- EXHIBIT 02 -->
+    <section class="exhibit" id="exhibit-02">
+        <div class="glass-card observe-me">
+            <span class="exhibit-num">EXHIBIT II</span>
+            <h2>Level 37: "Sublimity"</h2>
+            <p>Level 37, or the Poolrooms, is a vast maze of white tiled rooms filled with shallow, lukewarm water. Its architecture is irregular and surreal, with random pools, pillars, and staircases leading into deeper, dangerous areas. The water has calming effects from Epsom salt and unknown compounds, while sound is distorted and often muted, creating a quiet, eerie atmosphere with constant subtle ripples across all surfaces.</p>
+            <button class="btn-info hover-target" onclick="openModal('modal-2')">Access Memory Core</button>
+        </div>
+    </section>
+
+    <!-- EXHIBIT 03 -->
+    <section class="exhibit" id="exhibit-03">
+        <div class="glass-card center observe-me">
+            <span class="exhibit-num">EXHIBIT III</span>
+            <h2>Level 0: "The Lobby"</h2>
+            <p>Level 0 is an endless, shifting maze of yellowed backrooms with damp carpets and flickering fluorescent lights. Its layout constantly changes, making it easy to get lost and disoriented. A loud buzzing from the lights causes headaches and mental strain, while the main dangers are starvation, dehydration, and confusion. Above the ceiling is a cramped, dusty space filled with wires, but it’s not safe to explore.</p>
+            <button class="btn-info hover-target" onclick="openModal('modal-3')">Access Memory Core</button>
+        </div>
+    </section>
+
+    <!-- FOOTER -->
+    <footer>
+        <div class="footer-logo">The Liminal Space</div>
+        <div class="footer-links">
+            <a href="#" class="hover-target">About the Archive</a>
+            <a href="#" class="hover-target">Submit a Dream</a>
+            <a href="#" class="hover-target">Terms of Nostalgia</a>
+            <a href="#" class="hover-target">Contact Protocol</a>
+        </div>
+        <div class="footer-bottom">
+            &copy; 2026 ART OF DRK // YOU ARE DREAMING.
+        </div>
+    </footer>
+
+    <!-- MODALS FOR MORE INFORMATION -->
+    <div class="modal-overlay" id="modal-1">
+        <div class="modal-content">
+            <div class="modal-close hover-target" onclick="closeModal('modal-1')">&times;</div>
+            <span class="exhibit-num">ARCHIVE FILE #8804</span>
+            <h2>Level 94 - "Motion"</h2>
+            <p>It is safe during the day, but at night the music stops and hostile entities appear. The main threat is “Animations,” which attack anything that doesn’t look animated, alongside Smilers, Skin-Stealers, Hounds, Deathmoths, and Death Rats that mimic animation to survive.</p>
+            <div class="modal-meta">
+                <span>STATUS: UNSAFE</span>
+                <span>ENTITY COUNT: High Entity Count</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-2">
+        <div class="modal-content">
+            <div class="modal-close hover-target" onclick="closeModal('modal-2')">&times;</div>
+            <span class="exhibit-num">ARCHIVE FILE #1109</span>
+            <h2>Level 37: "Sublimity"</h2>
+            <p>Level 37, the Poolrooms, is a vast submerged maze of tiled rooms filled with calm, rippling water and distorted sound. It is believed to be completely devoid of life, with no confirmed sightings of entities or other wanderers. This may be due to its isolating properties or its immense, seemingly endless scale that makes encounters extremely unlikely.</p>
+            <div class="modal-meta">
+                <span>STATUS: SAFE</span>
+                <span>ENTITY COUNT: 0</span>
+            </div>
+        </div>
+    </div>
+
+    <div class="modal-overlay" id="modal-3">
+        <div class="modal-content">
+            <div class="modal-close hover-target" onclick="closeModal('modal-3')">&times;</div>
+            <span class="exhibit-num">ARCHIVE FILE #4040</span>
+            <h2>Level 0: "The Lobby"</h2>
+            <p>Level 0 is an empty, shifting maze of yellowed backrooms with flickering lights and a constant buzzing sound. Its layout constantly changes, causing heavy disorientation and mental strain. The level appears devoid of life, and sightings of others are believed to be hallucinations from isolation. Main dangers include getting lost, starvation, and dehydration, with a cramped, unsafe crawlspace above the ceiling.</p>
+            <div class="modal-meta">
+                <span>STATUS: SAFE</span>
+                <span>ENTITY COUNT: ?</span>
+            </div>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
